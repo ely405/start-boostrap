@@ -16,6 +16,7 @@
   color: white;
 }
 
+
 .bc-green{
   background-color: #18BC9C;
 }
@@ -34,4 +35,21 @@
 
 .m-06{
   margin: 0.6rem;
+}
+
+.line-d{
+  width: 50px;
+  border: 2px solid;
+}
+
+.txt-ce{
+  text-align: center;
+}
+
+button{
+  border: 3px solid white;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  padding: 1rem;
+  cursor: pointer;
 }

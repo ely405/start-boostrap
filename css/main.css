@@ -39,6 +39,10 @@
 
 }
 /*section start*/
+.main-section{
+  width: 90%;
+  margin: auto;
+}
 .start-b{
   display: flex;
   align-items: center;
@@ -61,4 +65,35 @@
   border: 3px solid white;
   width: 8rem;
   display: inline-flex;
+ }
+
+ /*portafolio*/
+.portafolio, .about{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  justify-content: space-around;
+}
+
+.portafolio h1, .about h2{
+  font-size: 2.625rem;
+}
+
+ .portafolio hr{
+   border-color: black;
+ }
+
+ .image-box img{
+   width: 400px;
+ }
+
+ /*about*/
+
+ .about{
+   height: 37rem;
+ }
+ .about p{
+   font-size: 1.15rem;
  }
