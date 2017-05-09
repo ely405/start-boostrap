@@ -1,0 +1,37 @@
+/*
+ * Estilos reutilizables
+ */
+
+ .up-case{
+   text-transform: uppercase;
+ }
+
+ a{
+   text-decoration: none;
+   font-size: 0.9rem;
+   margin: 0.5rem;
+ }
+
+.c-white{
+  color: white;
+}
+
+.bc-green{
+  background-color: #18BC9C;
+}
+
+.bc-dark{
+  background-color: rgb(44, 62, 80);
+}
+
+.fw-bold{
+  font-weight: bold;
+}
+
+.fs-18{
+  font-size: 1.8rem;
+}
+
+.m-06{
+  margin: 0.6rem;
+}
