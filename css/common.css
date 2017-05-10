@@ -15,22 +15,30 @@
 .c-white{
   color: white;
 }
-
+.c-green{
+  color: #18BC9C;
+}
 
 .bc-green{
   background-color: #18BC9C;
 }
 
 .bc-dark{
-  background-color: rgb(44, 62, 80);
+  background-color: #233140;
 }
 
 .fw-bold{
   font-weight: bold;
 }
+.fw-lig{
+  font-weight: lighter;
+}
 
 .fs-18{
   font-size: 1.8rem;
+}
+.fs-125{
+  font-size: 1.25rem;
 }
 
 .m-06{
@@ -54,6 +62,10 @@ button{
   cursor: pointer;
 }
 
+button, input, textarea{
+  outline: none;
+}
+
 .container{
     width: 90%;
     margin: auto;
@@ -62,7 +74,19 @@ button{
 .w-100{
     width: 100%;
 }
+.w-60{
+  width: 60%;
+}
 
 .tra-04{
     transition: 0.4s;
+}
+
+.bc-black{
+  border-color: black;
+}
+
+.bbtm-gray{
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
 }

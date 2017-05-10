@@ -1,13 +1,8 @@
-/*
- * Estilos de tu proyecto
- */
-
- *{
+*{
    margin: 0;
    padding: 0;
    box-sizing: border-box;
    font-family: 'Montserrat', 'Lato', sans-serif;
-       /*font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
 }
 
 /*header*/
@@ -27,7 +22,7 @@
 }
 
 .a-logo{
-  font-size: 18px;
+  font-size: 28px;
 }
 
 .menu li{
@@ -40,15 +35,8 @@
 }
 
 .menu a:hover{
-    background-color: aqua;
+    color: aqua;
 }
-
-
-/*section start*/
-/*.main-section{
-  width: 90%;
-  margin: auto;
-}*/
 .start-b{
   display: flex;
   align-items: center;
@@ -75,13 +63,9 @@
 
  /*portafolio*/
 
-.portafolio h1, .about h2{
+.portafolio h1, .about h2, .contact h2{
   font-size: 2.625rem;
 }
-
- .portafolio hr{
-   border-color: black;
- }
 
  .images{
     display: flex;
@@ -95,7 +79,7 @@
 }
 
  /*about*/
-.about{
+.about, .contact{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -120,13 +104,88 @@
  width: 60%;
 }
 
+/*contact form*/
+.form-group{
+    height: 4.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form-group label{
+  display: none;
+}
+.form-control{
+  border: none;
+  font-size: 1.2rem;
+  width: 100%;
+}
+.btn-send{
+  width: 6rem;
+}
+
+/*footer*/
+footer{
+  background-color: #2C3E50;
+  height: 21.25rem;
+  color: white;
+}
+
+.footer-top{
+  display: flex;
+  height: 80%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-bottom{
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.in-foot{
+  max-width: 34%;
+  height: 50%;
+  display: inherit;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.around-world a{
+  border: 2px solid white;
+  padding: 1rem;
+  border-radius: 50%;
+  width: 4rem;
+}
+
+.link:hover{
+  text-decoration: underline;
+}
+
 @media (max-width: 1200px){
     .paragr{
         display: initial;
         width: 80%;
     }
-    
+
     .image-box{
         width: 27.6%;
     }
+
+    footer{
+      height: 28.25rem;
+    }
+
+@media (max-width: 1000px){
+  footer{
+    height: 38rem;
+  }
+  .footer-top{
+    flex-direction: column;
+  }
+  .in-foot{
+    max-width: 100%;
+  }
+}
 }
