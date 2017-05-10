@@ -6,8 +6,8 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   /*font-family: 'Montserrat', sans-serif;*/
-       font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+   font-family: 'Montserrat', 'Lato', sans-serif;
+       /*font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
 }
 
 /*header*/
@@ -35,14 +35,12 @@
    display: inline-flex;
  }
 
- @media only screen and (min-width: 755px) {
 
-}
 /*section start*/
-.main-section{
+/*.main-section{
   width: 90%;
   margin: auto;
-}
+}*/
 .start-b{
   display: flex;
   align-items: center;
@@ -85,8 +83,19 @@
    border-color: black;
  }
 
+ .images{
+    flex-wrap: wrap;
+    display: inherit;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 37rem;
+    justify-content: space-around;
+    align-content: space-around;
+ }
+
  .image-box img{
-   width: 400px;
+   width: 22.5rem;
  }
 
  /*about*/
@@ -96,4 +105,20 @@
  }
  .about p{
    font-size: 1.15rem;
+   margin: 0.5rem;
+ }
+
+ .about button{
+   font-size: 1.15rem;
+ }
+
+
+ @media only screen and (max-width: 1200px) {
+   .paragr{
+     display: flex;
+     width: 60%;
+   }
+   .image-box img{
+     width: 20rem;
+   }
  }
