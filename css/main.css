@@ -39,7 +39,7 @@
 }
 
 /*hug menu*/
-#hug-menu, header label{
+#btn-hug-menu, header label{
   display: none;
 }
 
@@ -215,10 +215,18 @@ footer{
     background-color: #233140;
     position: absolute;
     top: 5rem;
-    left: -50rem;
+    left: 0;
     width: 100%;
+    display: none;
   }
   .menu ul{
     flex-direction: column;
+  }
+
+  /*#btn-hug-menu:checked ~ .menu{
+    display: block;
+  }*/
+  .check:checked ~ .menu{
+    display: block;
   }
 }

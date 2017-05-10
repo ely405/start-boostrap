@@ -1,3 +1,2 @@
-/*
- * Archivo principal de JS
- */
+var hugMenu = document.getElementById("hug-menu");
+var menu = document.getElementById("menu");
