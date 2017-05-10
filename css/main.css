@@ -16,7 +16,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 3.5rem;
+  height: 5rem;
 }
 .container{
   display: flex;
@@ -34,6 +34,14 @@
    list-style: none;
    display: inline-flex;
  }
+
+.menu a{
+    padding: 10px 0px;
+}
+
+.menu a:hover{
+    background-color: aqua;
+}
 
 
 /*section start*/
@@ -66,14 +74,6 @@
  }
 
  /*portafolio*/
-.portafolio, .about{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem 1rem;
-  justify-content: space-around;
-}
 
 .portafolio h1, .about h2{
   font-size: 2.625rem;
@@ -84,21 +84,24 @@
  }
 
  .images{
+    display: flex;
     flex-wrap: wrap;
-    display: inherit;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 90%;
-    height: 37rem;
     justify-content: space-around;
     align-content: space-around;
  }
 
- .image-box img{
-   width: 22.5rem;
- }
+.image-box{
+    width: 30%;
+}
 
  /*about*/
+.about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  justify-content: space-around;
+}
 
  .about{
    height: 37rem;
@@ -112,13 +115,18 @@
    font-size: 1.15rem;
  }
 
+.paragr{
+ display: flex;
+ width: 60%;
+}
 
- @media only screen and (max-width: 1200px) {
-   .paragr{
-     display: flex;
-     width: 60%;
-   }
-   .image-box img{
-     width: 20rem;
-   }
- }
+@media (max-width: 1200px){
+    .paragr{
+        display: initial;
+        width: 80%;
+    }
+    
+    .image-box{
+        width: 27.6%;
+    }
+}
