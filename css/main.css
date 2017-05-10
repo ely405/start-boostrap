@@ -222,11 +222,4 @@ footer{
   .menu ul{
     flex-direction: column;
   }
-
-  /*#btn-hug-menu:checked ~ .menu{
-    display: block;
-  }*/
-  .check:checked ~ .menu{
-    display: block;
-  }
 }
