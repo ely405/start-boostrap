@@ -12,6 +12,10 @@
    margin: 0.5rem;
  }
 
+.cu-point{
+  cursor: pointer;
+}
+
 .c-white{
   color: white;
 }
