@@ -22,24 +22,11 @@ function isInViewport(sectionInViewport, WithShade, WithoutShade) {
   var left = sectionInViewport.offsetLeft;
   var width = sectionInViewport.offsetWidth;
   var height = sectionInViewport.offsetHeight;
-
-  while(sectionInViewport.offsetParent) {
-    sectionInViewport = sectionInViewport.offsetParent;
-    top += sectionInViewport.offsetTop;
-    left += sectionInViewport.offsetLeft;
-  }
-
-  if(
-    top < (window.pageYOffset + window.innerHeight) &&
-    left < (window.pageXOffset + window.innerWidth) &&
-    (top + height) > window.pageYOffset &&
-    (left + width) > window.pageXOffset
-  ){
-    WithShade.style.backgroundColor = "green";
-    console.log(sectionInViewport);
-    (WithShade.style.backgroundColor="green")? WithoutShade.style.backgroundColor = "black": "";
+  if(top < (window.pageYOffset + window.innerHeight) && left < (window.pageXOffset + window.innerWidth) && (top + height) > window.pageYOffset && (left + width) > window.pageXOffset){
+    WithShade.className = "bc-green";
+    (WithShade.className == "bc-green")? WithoutShade.className = "bc-dark": "";
   }else{
-    WithShade.style.backgroundColor="black";
+    WithShade.className ="bc-dark";
   }
 }
 
