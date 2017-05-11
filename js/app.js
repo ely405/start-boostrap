@@ -17,30 +17,35 @@ var aPortfolio = document.getElementById("a-port");
 var aAbout = document.getElementById("a-about");
 var aContact = document.getElementById("a-cont");
 
-function onScroll(element){
-  var elementPos = element.getBoundingClientRect();
-  if(elementPos.top - scrollY <= -elementPos.top){
-    console.log("scroll 100");
+function isInViewport(sectionInViewport, WithShade, WithoutShade) {
+  var top = sectionInViewport.offsetTop;
+  var left = sectionInViewport.offsetLeft;
+  var width = sectionInViewport.offsetWidth;
+  var height = sectionInViewport.offsetHeight;
+
+  while(sectionInViewport.offsetParent) {
+    sectionInViewport = sectionInViewport.offsetParent;
+    top += sectionInViewport.offsetTop;
+    left += sectionInViewport.offsetLeft;
+  }
+
+  if(
+    top < (window.pageYOffset + window.innerHeight) &&
+    left < (window.pageXOffset + window.innerWidth) &&
+    (top + height) > window.pageYOffset &&
+    (left + width) > window.pageXOffset
+  ){
+    WithShade.style.backgroundColor = "green";
+    console.log(sectionInViewport);
+    (WithShade.style.backgroundColor="green")? WithoutShade.style.backgroundColor = "black": "";
+  }else{
+    WithShade.style.backgroundColor="black";
   }
 }
 
-function isInViewport(element, link) {
-  var rect = element.getBoundingClientRect();
-  var html = document.documentElement;
-  if(  rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || html.clientHeight) &&
-    rect.right <= (window.innerWidth || html.clientWidth)){
-      link.style.backgroundColor = "green";
-      console.log("top");
-    }else{
-      link.style.backgroundColor = "black";
-    }
-}
-
 window.addEventListener("scroll", function(){
-  isInViewport(portfolioSection, aPortfolio);
-  isInViewport(aboutSection, aAbout);
-  isInViewport(contactSection, aContact);
+  isInViewport(portfolioSection, aPortfolio, aAbout);
+  isInViewport(aboutSection, aAbout, aPortfolio);
+  isInViewport(contactSection, aContact, aAbout);
 
 });
