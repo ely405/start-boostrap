@@ -103,6 +103,7 @@ header label:hover{
   align-items: center;
   padding: 2rem 1rem;
   justify-content: space-around;
+  height: 100vh;
 }
 
  .about{

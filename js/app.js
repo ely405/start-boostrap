@@ -36,3 +36,7 @@ window.addEventListener("scroll", function(){
   isInViewport(contactSection, aContact, aAbout);
 
 });
+
+aPortfolio.addEventListener("click", function(){
+  portfolioSection.getBoundingClientRect().top = 90;
+});
