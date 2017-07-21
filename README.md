@@ -24,7 +24,11 @@ Freelancer es un tema de Bootstrap.
 + Cada uno de los **modal** esta **creado dinámicamente** con **javascript**
     * **Javascript**
 
+<<<<<<< HEAD
 ```
+=======
+```js
+>>>>>>> dfb1fcda280fa3683137eb38364453c9772311c1
 var imageToShowModal = document.getElementsByClassName("image-to-show-modal");
 var modalContainer = document.getElementById("modal-container");
 var modalImage = document.getElementById("image-modal");
@@ -37,6 +41,7 @@ for (var i = 0; i < imageToShowModal.length; i++){
     });
 }
 ```
+
 
 ##### _Desktop_
 >![Modal in desktop](gif/freelancer-modal-desktop.gif "Modal in desktop")
