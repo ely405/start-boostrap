@@ -25,7 +25,6 @@ Freelancer es un tema de Bootstrap.
     * **Javascript**
     
 ```js
->>>>>>> 2f1e90c8253ed4c4a77180a80eaf3c38d0ebb326
 var imageToShowModal = document.getElementsByClassName("image-to-show-modal");
 var modalContainer = document.getElementById("modal-container");
 var modalImage = document.getElementById("image-modal");
