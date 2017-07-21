@@ -23,7 +23,8 @@ Freelancer es un tema de Bootstrap.
 + Al hacer **click** aparece un modal con la imágen y descripción del proyecto
 + Cada uno de los **modal** esta **creado dinámicamente** con **javascript**
     * **Javascript**
-> ```
+
+```
 var imageToShowModal = document.getElementsByClassName("image-to-show-modal");
 var modalContainer = document.getElementById("modal-container");
 var modalImage = document.getElementById("image-modal");
@@ -60,6 +61,6 @@ for (var i = 0; i < imageToShowModal.length; i++){
 
 ---
 ### Demo
-[Frelancer | flexbox](https://ely405.github.io/start-boostrap/?target=_blank)
+[Frelancer | flexbox](https://ely405.github.io/start-boostrap/)
 
 
