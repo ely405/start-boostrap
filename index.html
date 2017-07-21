@@ -1,154 +1,216 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Freelancer</title>
-	<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,700" rel="stylesheet">
-	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
-	<link rel="stylesheet" href="css/common.css">
-	<link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-	<header class="main-header bc-dark">
-		<div class="container">
-			<section class="left logo">
-				<a href="#" class="up-case c-white a-logo fw-bold">Start boostrap</a>
-			</section>
-			<section class="hug-menu">
-				<input type="checkbox" id="btn-hug-menu" class="check">
-				<label for="btn-hug-menu" class="c-white" id="lab-menu">Menu</label>
-			</section>
-			<nav class="menu right" id="menu">
-				<ul>
-					<li id="a-port"><a href="#portfolio-Sec" class="up-case c-white fw-bold tra-04">Portafolio</a></li>
-					<li id="a-about"><a href="#about-sec" class="up-case c-white fw-bold tra-04">About</a></li>
-					<li id="a-cont"><a href="#contact" class="up-case c-white fw-bold tra-04s">Contact</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-	<section class="start-b bc-green" id="profile-sec">
-		<div>
-			<div>
-				<img src="assets/images/profile.png" alt="profile">
-			</div>
-			<div class="descrip">
-				<h1 class="up-case name c-white fw-bold m-06">Start boostrap</h1>
-				<hr class="m-06"><span class="fa fa-star c-white fs-18"></span><hr class="m-06">
-				<p class="c-white m-06">web Developer - Graphic Artist - User Experience Designer</p>
-			</div>
-		</div>
-	</section>
-	<section class="portafolio" id="portfolio-Sec">
-		<div class="title-port txt-ce">
-			<h1 class="up-case">Portfolio</h1>
-			<hr class="m-06 bc-black"><span class="fa fa-star fs-18"></span><hr class="m-06 bc-black">
-		</div>
-		<div class="images container">
-			<div class="image-box tra-04">
-				<img src="assets/images/portfolio/cabin.png" alt="cabin" class="w-100">
-			</div>
-			<div class="image-box tra-04">
-				<img src="assets/images/portfolio/cake.png" alt="cake" class="w-100">
-			</div>
-			<div class="image-box tra-04">
-				<img src="assets/images/portfolio/circus.png" alt="circus" class="w-100">
-			</div>
-			<div class="image-box tra-04">
-				<img src="assets/images/portfolio/game.png" alt="game" class="w-100">
-			</div>
-			<div class="image-box tra-04">
-				<img src="assets/images/portfolio/safe.png" alt="safe" class="w-100">
-			</div>
-			<div class="image-box tra-04">
-				<img src="assets/images/portfolio/submarine.png" alt="submarine" class="w-100">
-			</div>
-		</div>
-	</section>
-	<section class="about bc-green" id="about-sec">
-		<div class="txt-ce">
-			<h2 class="up-case c-white">About</h2>
-			<hr class="m-06"><span class="fa fa-star c-white fs-18"></span><hr class="m-06">
-		</div>
-		<div class="paragr">
-			<p class="c-white">
-				Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.
-			</p>
-			<br>
-			<p class="c-white">
-				Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!
-			</p>
-		</div>
-		<div class="but">
-			<button type="button" id="download" class="fa fa-download c-white fs-125">Download Theme</button>
-		</div>
-	</section>
-	<section class="contact" id="contact">
-		<div class="txt-ce">
-			<h2 class="up-case">Contact me</h2>
-			<hr class="m-06 bc-black"><span class="fa fa-star fs-18"></span><hr class="m-06 bc-black">
-		</div>
-		<form id="contact-form" class="w-60" method="post">
-			<div class="form-group bbtm-gray">
-				<label for="name">Name</label>
-				<input type="text" class="form-control" placeholder="Name" id="name" required="" validation-message="Please enter your name." aria-invalid="false">
-			</div>
-			<div class="form-group bbtm-gray">
-				<label for="email">Email Address</label>
-				<input type="email" class="form-control" placeholder="Email Address" id="email" required="" validation-message="Please enter your email address.">
-			</div>
-			<div class="form-group bbtm-gray">
-				<label for="phone">Phone Number</label>
-				<input type="tel" class="form-control" placeholder="Phone Number" id="phone" required="" validation-message="Please enter your phone number.">
-			</div>
-			<div class="form-group bbtm-gray">
-				<label for="message">Message</label>
-				<textarea rows="5" class="form-control" placeholder="Message" id="message" required="" validation-message="Please enter a message."></textarea>
-			</div>
-			<br>
-			<div id="success"></div>
-			<div class="form-group">
-				<button type="submit" class="btn-send fs-125 bc-green c-white">Send</button>
-			</div>
-		</form>
-	</section>
-	<footer>
-		<section class="footer-top">
-			<section class="location in-foot txt-ce">
-				<div>
-					<h2 class="up-case fw-bold">Location</h2>
-				</div>
-				<div>
-					<p class="fs-125">3481 Melrose Place<br>Beverly Hills, CA 90210</p>
-				</div>
-			</section>
-			<section class="around-world in-foot txt-ce">
-				<div>
-					<h2 class="up-case fw-bold">Around the web</h2>
-				</div>
-				<div>
-					<a href="#" class="fa fa-fw fa-facebook c-white fs-125"></a>
-					<a href="#" class="fa fa-fw fa-google-plus c-white"></a>
-					<a href="#" class="fa fa-fw fa-twitter c-white"></a>
-					<a href="#" class="fa fa-fw fa-linkedin c-white"></a>
-					<a href="#" class="fa fa-fw fa-dribbble c-white"></a>
-				</div>
-			</section>
-			<section class="free in-foot txt-ce">
-				<div>
-					<h2 class="up-case fw-bold">About Freelancer</h2>
-				</div>
-				<div>
-					<p class="fs-125">Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com" class="fs-125 c-green link">Start Bootstrap</a>.</p>
-				</div>
-			</section>
-		</section>
-		<section class="footer-bottom bc-dark">
-			<h5 class="fw-lig">Copyright &#169; Your Website 2016</h5>
-		</section>
-	</footer>
-	<script type="text/javascript" src="js/app.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Freelancer | flex-box</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <header class="main-header bc-dark">
+            <div class="container">
+                <section class="left logo">
+                    <a href="#" class="up-case c-white a-logo fw-bold">Start bootstrap</a>
+                </section>
+                <section class="hug-menu">
+                    <input type="checkbox" id="btn-hug-menu" class="check">
+                    <label for="btn-hug-menu" class="c-white" id="lab-menu">Menu <i class="fa fa-bars"></i></label>
+                </section>
+                <nav id="menu" class="menu right menu-none">
+                    <ul>
+                        <li id="a-port"><a href="#portfolio-Sec" class="up-case c-white fw-bold tra-04">Portafolio</a></li>
+                        <li id="a-about"><a href="#about-sec" class="up-case c-white fw-bold tra-04">About</a></li>
+                        <li id="a-cont"><a href="#contact" class="up-case c-white fw-bold tra-04s">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="start-b bc-green" id="profile-sec">
+            <div>
+                <div>
+                    <img src="assets/images/profile.png" alt="profile">
+                </div>
+                <div class="descrip">
+                    <h1 class="up-case name c-white fw-bold m-06">Start bootstrap</h1>
+                    <hr class="m-06"><i class="fa fa-star c-white fs-18"></i><hr class="m-06">
+                    <p class="c-white m-06">web Developer - Graphic Artist - User Experience Designer</p>
+                </div>
+            </div>
+        </section>
+        <section class="portafolio" id="portfolio-Sec">
+            <div class="title-port txt-ce">
+                <h1 class="up-case">Portfolio</h1>
+                <hr class="m-06 bc-black"><i class="fa fa-star fs-18"></i><hr class="m-06 bc-black">
+            </div>
+            <div class="images container">
+                <div class="image-box tra-04">
+                    <div class="img-box-to-hover c-white image-to-show-modal">
+                        <div class="bc-green h-100 center">
+                            <i class="fa fa-search-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="assets/images/portfolio/cabin.png" alt="cabin" class="w-100">
+                </div>
+                <div class="image-box tra-04">
+                    <div class="img-box-to-hover c-white image-to-show-modal">
+                        <div class="bc-green h-100 center">
+                            <i class="fa fa-search-plus fa-3x"></i>
+                        </div>                    
+                    </div>
+                    <img src="assets/images/portfolio/cake.png" alt="cake" class="w-100">
+                </div>
+                <div class="image-box tra-04">
+                    <div class="img-box-to-hover c-white image-to-show-modal">
+                        <div class="bc-green h-100 center">
+                            <i class="fa fa-search-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="assets/images/portfolio/circus.png" alt="circus" class="w-100">
+                </div>
+                <div class="image-box tra-04">
+                    <div class="img-box-to-hover c-white image-to-show-modal">
+                        <div class="bc-green h-100 center">
+                            <i class="fa fa-search-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="assets/images/portfolio/game.png" alt="game" class="w-100">
+                </div>
+                <div class="image-box tra-04">
+                    <div class="img-box-to-hover c-white image-to-show-modal">
+                        <div class="bc-green h-100 center">
+                            <i class="fa fa-search-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="assets/images/portfolio/safe.png" alt="safe" class="w-100">
+                </div>
+                <div class="image-box tra-04">
+                    <div class="img-box-to-hover c-white image-to-show-modal">
+                        <div class="bc-green h-100 center">
+                            <i class="fa fa-search-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="assets/images/portfolio/submarine.png" alt="submarine" class="w-100">
+                </div>
+            </div>
+            <div class="box-modal" id="modal-container">
+                <div class="p-rel modal-content">
+                    <button type="button" id="close">
+                        <div class="d-close p-abs"></div>
+                    </button>
+                    <h1 class="up-case name fw-bold m-06">PROYECT TITLE</h1>
+                    <hr class="m-06 hr-modal"><i class="fa fa-star fs-18"></i><hr class="m-06 hr-modal">
+                    <img id="image-modal">
+                    <div class="proyect-description">
+                        <p class="fs-20 p-16">Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/" class="c-green link">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                        <ul class="list-inline p-16">
+                            <li>Client:
+                                <strong><a href="http://startbootstrap.com" class="c-green link">Start Bootstrap</a>
+                                </strong>
+                            </li>
+                            <li>Date:
+                                <strong><a href="http://startbootstrap.com" class="c-green link">April 2014</a>
+                                </strong>
+                            </li>
+                            <li>Service:
+                                <strong><a href="http://startbootstrap.com" class="c-green link">Web Development</a>
+                                </strong>
+                            </li>
+                        </ul>
+                        <button type="button" id="btn-close"><i class="fa fa-times"></i> Close</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about bc-green" id="about-sec">
+            <div class="title-about txt-ce">
+                <h2 class="up-case c-white">About</h2>
+                <hr class="m-06"><i class="fa fa-star c-white fs-18"></i><hr class="m-06">
+            </div>
+            <div class="paragr">
+                <p class="c-white">
+                    Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.
+                </p>
+                <br>
+                <p class="c-white">
+                    Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!
+                </p>
+            </div>
+            <div class="but">
+                <button type="button" id="download" class="fa fa-download c-white fs-125">Download Theme</button>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="titlte-contact txt-ce">
+                <h2 class="up-case">Contact me</h2>
+                <hr class="m-06 bc-black"><i class="fa fa-star fs-18"></i><hr class="m-06 bc-black">
+            </div>
+            <form id="contact-form" class="w-60">
+                <div class="form-group bbtm-gray">
+                    <label for="name" class="c-green">Name</label>
+                    <input type="text" class="form-control p-16" placeholder="Name" id="name" required="" validation-message="*Please enter your name.*">
+                    <span class="fs-20" name="span-error"></span>
+                </div>
+                <div class="form-group bbtm-gray">
+                    <label for="email" class="c-green">Email Address</label>
+                    <input type="email" class="form-control p-16" placeholder="Email Address" id="email" required="" validation-message="*Please enter your email address.*">
+                    <span class="fs-20" name="span-error"></span>
+                </div>
+                <div class="form-group bbtm-gray">
+                    <label for="phone" class="c-green">Phone Number</label>
+                    <input type="tel" class="form-control p-16" placeholder="Phone Number" id="phone" required="" validation-message="*Please enter your phone number.*">
+                    <span class="fs-20" name="span-error"></span>
+                </div>
+                <div class="form-group bbtm-gray">
+                    <label for="message" class="c-green">Message</label>
+                    <textarea rows="5" class="form-control p-16" placeholder="Message" id="message" required="" validation-message="*Please enter a message.*"></textarea>
+                    <span class="fs-20" name="span-error"></span>
+                </div>
+                <br>
+                <div id="success"></div>
+                <div class="form-group">
+                    <button type="submit" class="btn-send fs-125 bc-green c-white" id="btn-send">Send</button>
+                </div>
+            </form>
+        </section>
+        <footer>
+            <section class="footer-top">
+                <section class="location in-foot txt-ce">
+                    <div>
+                        <h2 class="up-case fw-bold">Location</h2>
+                    </div>
+                    <div>
+                        <p class="fs-125">3481 Melrose Place<br>Beverly Hills, CA 90210</p>
+                    </div>
+                </section>
+                <section class="around-world in-foot txt-ce">
+                    <div>
+                        <h2 class="up-case fw-bold">Around the web</h2>
+                    </div>
+                    <div>
+                        <a href="#" class="fa fa-fw fa-facebook c-white fs-125"></a>
+                        <a href="#" class="fa fa-fw fa-google-plus c-white"></a>
+                        <a href="#" class="fa fa-fw fa-twitter c-white"></a>
+                        <a href="#" class="fa fa-fw fa-linkedin c-white"></a>
+                        <a href="#" class="fa fa-fw fa-dribbble c-white"></a>
+                    </div>
+                </section>
+                <section class="free in-foot txt-ce">
+                    <div>
+                        <h2 class="up-case fw-bold">About Freelancer</h2>
+                    </div>
+                    <div>
+                        <p class="fs-125">Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com" class="fs-125 c-green link">Start Bootstrap</a>.</p>
+                    </div>
+                </section>
+            </section>
+            <section class="footer-bottom bc-dark">
+                <h5 class="fw-lig">Copyright &#169; Your Website 2016</h5>
+            </section>
+        </footer>
+        <script type="text/javascript" src="js/app.js"></script>
+    </body>
 </html>
