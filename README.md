@@ -23,7 +23,7 @@ Freelancer es un tema de Bootstrap.
 + Al hacer **click** aparece un modal con la imágen y descripción del proyecto
 + Cada uno de los **modal** esta **creado dinámicamente** con **javascript**
     * **Javascript**
-> ```
+```
 var imageToShowModal = document.getElementsByClassName("image-to-show-modal");
 var modalContainer = document.getElementById("modal-container");
 var modalImage = document.getElementById("image-modal");
